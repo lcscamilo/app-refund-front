@@ -9,11 +9,15 @@ import { AppLayout } from "../components/AppLayout";
 export function EmployeeRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<AppLayout />}>
-        <Route path="/" element={<Refund />} />
-        <Route path="/confirm" element={<Confirm />} />
+      <Route element={<AppLayout />}>
+        {/* rota padrão (quando acessar /) */}
+        <Route index element={<Refund />} />
+
+        {/* rota filha: /confirm */}
+        <Route path="confirm" element={<Confirm />} />
       </Route>
 
+      {/* rota fallback */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

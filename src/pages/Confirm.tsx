@@ -23,7 +23,7 @@ export function Confirm() {
         setor financeiro irá entrar em contato com você.
       </p>
 
-      <Button className="w-full" onClick={() => navigate(-1)}>
+      <Button variant="baseFull" onClick={() => navigate(-1)}>
         Nova solicitação
       </Button>
     </div>
