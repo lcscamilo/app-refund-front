@@ -10,9 +10,9 @@ import fileSvg from "../assets/file.svg";
 import { CATEGORIES, CATEGORIES_KEYS } from "../utils/categories";
 
 export function Refund() {
-  const [name, setName] = useState("teste");
-  const [amount, setAmount] = useState("teste");
-  const [category, setCategory] = useState("teste");
+  const [name, setName] = useState("Ana Teste");
+  const [amount, setAmount] = useState("123.45");
+  const [category, setCategory] = useState("Alimentação");
   const [isLoading, setIsLoading] = useState(false);
   const [filename, setFilename] = useState<File | null>(null);
 
@@ -33,7 +33,7 @@ export function Refund() {
 
   return (
     <form
-      className="bg-gray-500 w-full rounded-xl flex flex-col p-10 gap-6 lg:min-w[512px]"
+      className="bg-gray-500 w-full rounded-xl flex flex-col p-10 gap-6 lg:min-w-[512px]"
       onSubmit={onSubmit}
     >
       <header>
